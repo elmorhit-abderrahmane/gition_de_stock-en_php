@@ -1,7 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(https://thumbs.dreamstime.com/z/planks-dark-old-wood-texture-background-170515350.jpg);
+  /* background-image: url(https://thumbs.dreamstime.com/z/planks-dark-old-wood-texture-background-170515350.jpg); */
+  background-color: #fff;
+
   font-family: "Droid Sans", sans-serif;
 }
 header {
@@ -68,8 +70,9 @@ li {
 }
 
 .heading {
+  background-color: blue;
   text-align: center;
-  background-image: url(https://thumbs.dreamstime.com/z/planks-dark-old-wood-texture-background-170515350.jpg);
+  /* background-image: url(https://thumbs.dreamstime.com/z/planks-dark-old-wood-texture-background-170515350.jpg); */
   width: 100%;
   height: auto;
   margin: 0;
@@ -86,7 +89,9 @@ li {
   text-shadow: -1px 1px 3px black;
 }
 .arrow {
-  background-image: url(https://thumbs.dreamstime.com/z/planks-dark-old-wood-texture-background-170515350.jpg);
+  background-color: blue;
+
+  /* background-image: url(https://thumbs.dreamstime.com/z/planks-dark-old-wood-texture-background-170515350.jpg); */
   width: 100%;
   height: auto;
 }
