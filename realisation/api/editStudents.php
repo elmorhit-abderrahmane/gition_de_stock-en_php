@@ -1,10 +1,12 @@
 <?php
 $id = $_POST["sid"];
-$dbh = new PDO("mysql:host=localhost;dbname=ordinateur","root","abde1234");
-$sql = "UPDATE latitude SET ID = :ID,libellé = :libellé,prix = :prix WHERE id = $id";
+$dbh = new PDO("mysql:host=localhost;dbname=schoolstd","root","abde1234");
+$sql = "UPDATE schoolstudents SET name = :name,fathername = :fathername,rollno = :rollno,degree = :degree,branch = :branch WHERE id = $id";
 $addStudentsQuery = $dbh->prepare($sql);
-$addStudentsQuery->bindParam(":ID",$_POST["ID"],PDO::PARAM_STR);
-$addStudentsQuery->bindParam(":libellé",$_POST["libellé"],PDO::PARAM_STR);
-$addStudentsQuery->bindParam(":prix",$_POST["prix"],PDO::PARAM_STR);
+$addStudentsQuery->bindParam(":name",$_POST["name"],PDO::PARAM_STR);
+$addStudentsQuery->bindParam(":fathername",$_POST["fathername"],PDO::PARAM_STR);
+$addStudentsQuery->bindParam(":rollno",$_POST["rollno"],PDO::PARAM_STR);
+$addStudentsQuery->bindParam(":degree",$_POST["degree"],PDO::PARAM_STR);
+$addStudentsQuery->bindParam(":branch",$_POST["branch"],PDO::PARAM_STR);
 $addStudentsQuery->execute();
 ?>
