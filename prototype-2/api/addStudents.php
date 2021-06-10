@@ -9,3 +9,7 @@ $addStudentsQuery->bindParam(":degree",$_POST["degree"],PDO::PARAM_STR);
 $addStudentsQuery->bindParam(":branch",$_POST["branch"],PDO::PARAM_STR);
 $addStudentsQuery->execute();
 ?>
+
+
+
+
